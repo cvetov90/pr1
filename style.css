@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 75px 50px auto auto auto 75px / repeat(3,1fr);
+    min-height: 100vh;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.header {
+    display: grid;
+    grid-column: span 3;
+    width: 100%;
+    background-color: rgb(40, 184, 40);
+    text-align: center;
+    padding: 10px;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.menu {
+    width: 100%;
+    background-color: rgb(51, 218, 51);
+    color: #fff;
+}
+
+.menu-top {
+    display: grid;
+    grid-column: span 2;
+    padding-left: 40px;
+}
+
+.menu-cart {
+    display: grid;
+    text-align: right;
+    padding-right: 70px;
+}
+
+.menu-list {
+    padding: 0;
+}
+
+.menu-item {
+    display: inline;
+    border-right: 1px solid white;
+    padding: 5px 20px;
+    transition: 0.5s;
+}
+
+.menu-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background-color: rgb(40, 184, 40);
+}
+
+.cart {
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+.item {
+    display: grid;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 30px;
+    width: 370px;
+    height: 550px;
+    transition: 0.5s;
+    margin: 25px 50px;
+}
+
+.item:hover {
+    box-shadow: 4px 10px 10px rgba(0,0,0,0.3);
+}
+
+.item-img {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    /* background-image: url("https://itproger.com/img/courses/1476977240.jpg");   */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: 50% 50%; */
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.item-title {
+    text-align: center;
+    /* padding-left: 35px; */
+    /* padding-right: 35px; */
+    font-weight: bold;
+    margin-top: -50px;
+}
+
+.item-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    width: 300px;
+    height: 40px;
+    background-color: #666cff;
+    border: 0;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 1s;
+}
+
+.btn:hover {
+    border: #666cff solid 3px;
+    background-color: #fff; 
+}        
+
+.footer {
+    display: grid;
+    grid-column: span 3;
+    width: 100%;
+    background-color: dimgray;
+    color: white;
+    padding: 20px 0 20px 80px;
+    /* margin: 20px 40px; */
+ }
